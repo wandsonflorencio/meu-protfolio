@@ -13,9 +13,38 @@ img{
     padding: 0 20px;
     margin: 10px auto;
 }
+.header-section{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.titulo{
+    color: #cccccc;
+    font-size: 48px;
+    font-weight: bold;
+}
+.subtitulo{
+    color: #cccccc;
+    font-size: 30px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.subtitulo::after{
+    content: "";
+    height: 3px;
+    width: 150px;
+    background-color: #d3ee8a;
+    
+}
 /*informaçoes gerais*/
 
+    
+
 .info-header{
+    z-index: 9;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -54,5 +83,114 @@ img{
     margin-right: 20px;
 
 }
+.mobile-menu-icons{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.5s ;
+    
+}
+.mobile-menu-icons:hover{
+    color: #d3ee8a;
+}
+.info-apresentacao{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.info-apresentacao h1{
+    color: #a7a7a7;
+    font-size: 50px;
+}
+.info-apresentacao span{
+    background: linear-gradient(50deg, #5ae74d  ,#dbff79,#7ddfb1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.profil-foto img{
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    border: none;
+    
+    
+    
+}
+.profil-foto{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 100%;
+    border: none;
+    
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(180deg, #5ae74d  ,#333b1c,#7ddfb1);
+    
+}
+/*sobre mim.*/
+.info-aboutme{
+    margin-top: 100PX;
+
+    
+}
+.info-aboutme P{
+    font-size: 18px;
+    padding: 10px;
+    color: #cccccc;
+}
+
+/*tecnologias*/
 
 
+.conteudo-icons{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 60px 0;
+}
+.conteudo-icons img{
+    filter: grayscale(0);
+    transition: filter 0.5s;
+}
+.conteudo-icons img:hover{
+    cursor: pointer;
+    filter:grayscale(1);
+}
+/*projetos*/
+.info-projetos{
+   gap: 10px;
+   width: 350px;
+   background-color: #3b3b3b;
+   border-radius: 20px;
+   text-align: center;
+  
+}
+.card-projetos img{
+    border-radius: 15px;
+   
+   
+    
+    
+}
+.info-card-projetos h3{
+    color: #cccccc;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.info-card-projetos p{
+    color: #a7a7a7;
+    
+
+}
+.legend-projeto{
+    font-size: 20px;
+}
+.legend-projeto p span{
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 20px;
+}
